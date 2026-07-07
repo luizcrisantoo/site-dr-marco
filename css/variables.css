@@ -1,0 +1,55 @@
+/* ============================================================
+   variables.css — Tokens de design (GSD PRO)
+   Tema medico: Vermelho (marca Angiocenter) + Azul clinico + neutros frios
+   ============================================================ */
+
+:root {
+  /* Marca — vermelho (Angiocenter) */
+  --primary-color: #B01E28;      /* vermelho medico */
+  --primary-dark: #8A141C;       /* vermelho escuro (hover) */
+  --primary-light: #CE3742;      /* vermelho claro */
+  --primary-tint: #FBEAEB;       /* fundo vermelho bem suave */
+
+  /* Azul clinico — confianca (Angiocenter) */
+  --blue: #0E4C92;               /* azul institucional */
+  --blue-dark: #0A366A;
+  --blue-tint: #EAF1FA;          /* fundo azul bem suave */
+
+  /* Neutros frios */
+  --secondary-color: #12212F;    /* slate escuro (titulos) */
+  --bg-color: #ffffff;
+  --bg-soft: #F3F6FA;            /* cinza-azulado claro */
+  --bg-dark: #0C1B2A;           /* navy p/ rodape */
+
+  --text-color: #223243;         /* texto principal (slate) */
+  --text-muted: #5C6B7A;         /* texto secundario */
+  --text-on-primary: #ffffff;
+
+  --border-color: #E3E9F0;       /* borda fria */
+  --whatsapp: #25D366;
+
+  /* Fontes */
+  --font-primary: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Poppins', 'Inter', sans-serif;
+
+  /* Espacamentos */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+
+  /* Bordas e sombras (frias, discretas) */
+  --border-radius: 8px;
+  --border-radius-lg: 14px;
+  --shadow-sm: 0 1px 3px rgba(18, 33, 47, 0.06), 0 1px 2px rgba(18, 33, 47, 0.04);
+  --shadow: 0 6px 20px rgba(18, 33, 47, 0.08);
+  --shadow-lg: 0 20px 48px rgba(18, 33, 47, 0.14);
+
+  /* Layout */
+  --max-width: 1180px;
+  --header-height: 74px;
+
+  --transition: 0.25s ease;
+}
