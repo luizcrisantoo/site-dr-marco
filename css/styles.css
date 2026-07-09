@@ -223,7 +223,9 @@ html.js .reveal.visible { opacity: 1; transform: none; }
   .about__grid { grid-template-columns: 1.1fr 0.9fr; align-items: start; }
   .cards { grid-template-columns: repeat(2, 1fr); }
   .reviews { grid-template-columns: repeat(2, 1fr); }
-  .contact__grid { grid-template-columns: 1fr 1fr; align-items: start; }
+  .contact__grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
+  .contact__grid > div:last-child { display: flex; flex-direction: column; }
+  .contact__grid > div:last-child .map { flex: 1; height: 100%; min-height: 340px; }
   .footer__grid { grid-template-columns: 2fr 1fr 1fr; }
 }
 @media (min-width: 1024px) {
@@ -296,3 +298,28 @@ html.js .reveal.visible { opacity: 1; transform: none; }
 @media (min-width: 1024px) {
   .steps { grid-template-columns: repeat(4, 1fr); }
 }
+
+/* ---------- 9. Fotos reais (sobre / banner) ---------- */
+.about__figure { margin: 0; position: relative; }
+.about__photo { width: 100%; border-radius: var(--border-radius-lg); box-shadow: var(--shadow);
+  border: 5px solid #fff; outline: 1px solid var(--border-color); }
+.about__figure::before { content:''; position:absolute; inset: 14px -14px -14px 14px; z-index:-1;
+  background: linear-gradient(135deg, var(--primary-color), var(--blue)); border-radius: var(--border-radius-lg); opacity: 0.12; }
+
+.credentials-wrap { margin-top: var(--spacing-xl); }
+.credentials-wrap__title { text-align: center; font-size: 1.25rem; margin-bottom: var(--spacing-lg); }
+
+.banner { margin: 0 0 var(--spacing-xl); }
+.banner__img { width: 100%; height: auto; border-radius: var(--border-radius-lg); box-shadow: var(--shadow); }
+
+@media (min-width: 768px) {
+  .about__grid { grid-template-columns: 0.85fr 1.15fr; align-items: center; }
+  .credentials { grid-template-columns: repeat(2, 1fr); }
+  .banner__img { max-height: 420px; object-fit: cover; }
+}
+
+/* ---------- 10. Cards de tratamento sem icone (acabamento) ---------- */
+.card__title { position: relative; padding-top: 1rem; }
+.card__title::before { content: ''; position: absolute; top: 0; left: 0; width: 34px; height: 3px;
+  background: var(--primary-color); border-radius: 2px; transition: width var(--transition); }
+.card:hover .card__title::before { width: 52px; }

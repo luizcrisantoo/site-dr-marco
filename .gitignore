@@ -15,3 +15,9 @@ dist/
 # Arquivos temporários
 *.log
 *.tmp
+
+# Fotos originais/não usadas (pode apagar manualmente da pasta)
+assets/images/*.HEIC
+assets/images/*.heic
+assets/images/dr-marco*.jpg
+assets/images/dr-marco*.webp
