@@ -56,6 +56,8 @@ ul { list-style: none; }
 .header .container { display: flex; align-items: center; justify-content: space-between; }
 
 .brand { display: flex; align-items: center; gap: 0.65rem; }
+.brand__logo { height: 78px; width: auto; display: block; }
+@media (max-width: 600px) { :root { --header-height: 82px; } .brand__logo { height: 58px; } }
 .brand__name { font-family: var(--font-heading); font-weight: 600; font-size: 1rem; line-height: 1.15; color: var(--secondary-color); }
 .brand__role { font-size: 0.72rem; color: var(--primary-color); font-weight: 600; letter-spacing: 0.03em; }
 
@@ -182,6 +184,8 @@ ul { list-style: none; }
 .footer { background: var(--bg-dark); color: rgba(255,255,255,0.85); padding-block: var(--spacing-xl) var(--spacing-lg); }
 .footer__grid { display: grid; gap: var(--spacing-lg); }
 .footer__brand { display: flex; align-items: center; gap: 0.65rem; margin-bottom: var(--spacing-md); }
+.footer__logo { height: 104px; width: auto; display: block; max-width: 100%; }
+.footer__legal { color: rgba(255,255,255,0.6); font-size: 0.82rem; margin-top: 0.4rem; }
 .footer__brand .brand__name { color: #fff; } .footer__brand .brand__role { color: #fff; opacity: 0.85; }
 .footer p { color: rgba(255,255,255,0.65); font-size: 0.92rem; }
 .footer h4 { color: #fff; font-size: 1rem; margin-bottom: var(--spacing-md); }
