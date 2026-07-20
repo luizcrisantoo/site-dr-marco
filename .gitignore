@@ -21,3 +21,9 @@ assets/images/*.HEIC
 assets/images/*.heic
 assets/images/dr-marco*.jpg
 assets/images/dr-marco*.webp
+
+# IMAGENS CLINICAS DE PACIENTES - NUNCA PUBLICAR (LGPD / Res. CFM 2.336/2023)
+# Estes arquivos nao devem ir para o repositorio nem para o site.
+assets/images/WhatsApp*
+assets/images/*antes*
+assets/images/*depois*
