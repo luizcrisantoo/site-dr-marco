@@ -34,8 +34,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"></noscript>
   <link rel="preload" as="image" href="assets/images/hero.webp" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -133,8 +135,11 @@
   <header class="header" id="header">
     <div class="container">
       <a href="#inicio" class="brand" aria-label="Início — Angiocenter, Dr. Marco Crisanto">
-        <img class="brand__logo" src="assets/images/logo-angiocenter.png" width="1762" height="913"
-             alt="Angiocenter — Angiologia e Cirurgia Vascular">
+        <picture>
+          <source srcset="assets/images/logo-angiocenter.webp" type="image/webp">
+          <img class="brand__logo" src="assets/images/logo-angiocenter.png" width="440" height="227"
+               alt="Angiocenter — Angiologia e Cirurgia Vascular">
+        </picture>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
         <span></span>
@@ -522,8 +527,11 @@
       <div class="footer__grid">
         <div>
           <div class="footer__brand">
-            <img class="footer__logo" src="assets/images/logo-angiocenter-white.png" width="1762" height="913"
-                 alt="Angiocenter — Angiologia e Cirurgia Vascular">
+            <picture>
+              <source srcset="assets/images/logo-angiocenter-white.webp" type="image/webp">
+              <img class="footer__logo" src="assets/images/logo-angiocenter-white.png" width="440" height="227"
+                   loading="lazy" decoding="async" alt="Angiocenter — Angiologia e Cirurgia Vascular">
+            </picture>
           </div>
           <p>Dr. Marco Antonio Crisanto — angiologista e cirurgião vascular em Teresina/PI, no Angiocenter. Cuidado especializado, humano e próximo do paciente.<br>CRM 2413-PI &middot; RQE 393.</p>
         </div>
